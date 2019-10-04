@@ -1,0 +1,18 @@
+text { fill: fb-green; font-family: "Colfax-Black"; }
+image { fill: fb-green; opacity: 1; }
+
+#spinner { x: 50%-25; y: 50%-25; width: 50; height: 50; fill: fb-green; }
+
+.grid-tile { width: 100%; height: 100%; display: none; }
+
+.row { x: 0; width: 100%; }
+
+.align-to-left { x: 100%; text-anchor: end; }
+
+.time text { font-size: 42; }
+
+.speed .value { y: 54%; font-size: 60; }
+.speed .units { y: 94%; font-size: 36; }
+
+.bearing text { font-size: 54; }
+.bearing text.max-speed-mode { font-size: 48;}

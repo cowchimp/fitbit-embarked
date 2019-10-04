@@ -1,0 +1,41 @@
+{
+  "name": "fitbit-embarked",
+  "author": {
+    "name": "cowchimp",
+    "url": "http://blog.cowchimp.com"
+  },
+  "repository": "cowchimp/fitbit-embarked",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  },
+  "dependencies": {
+    "geolib": "^3.0.4"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~3.1.2",
+    "@fitbit/sdk-cli": "^1.7.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2"
+  },
+  "fitbit": {
+    "appUUID": "6aa923f1-6fb2-4be2-a202-c0f6fb5dfced",
+    "appType": "app",
+    "appDisplayName": "Embarked",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#607d8b",
+    "requestedPermissions": [
+      "access_location",
+      "run_background"
+    ],
+    "buildTargets": [
+      "meson"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  }
+}

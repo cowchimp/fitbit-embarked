@@ -1,0 +1,46 @@
+<svg>
+  <svg display="none" id="loading" class="screen">
+    <use id="spinner" href="#spinner" />
+  </svg>
+  <svg id="stats" class="screen">
+    <rect fill="red" class="grid-tile" />
+
+    <svg class="time row" y="0" height="20%">
+      <rect fill="pink" class="grid-tile" />
+      <text x="50%" text-anchor="middle" id="watch-time-data" class="watch-time-mode">{ time }</text>
+      <text x="50%" text-anchor="middle" id="gps-time-data" class="gps-time-mode">{ time }</text>
+      <image x="6" y="50%-18" width="36" height="36" href="satellite.png" class="gps-time-mode" />
+    </svg>
+    
+    <svg class="speed row" y="20%" height="35%">
+      <svg x="6" width="50%-6">
+        <rect fill="white" class="grid-tile" />
+        <text class="value current-speed-mode" id="speed-kmh-data" text-length="12">...</text>
+        <text class="value max-speed-mode" id="max-speed-kmh-data" text-length="12">...</text>
+        <text class="units" id="speed-kmh-unit">km/h</text>
+      </svg>
+      <svg x="50%" width="50%-6">
+        <rect fill="gray" class="grid-tile" />
+        <text class="value current-speed-mode align-to-left" id="speed-knots-data" text-length="12">...</text>
+        <text class="value max-speed-mode align-to-left" id="max-speed-knots-data" text-length="12">...</text>
+        <text class="units align-to-left" id="speed-knots-units">knots</text>
+      </svg>
+    </svg>
+    
+    <svg class="bearing row" y="55%" height="25%">
+      <rect fill="blue" class="grid-tile" />
+      <text x="50%" text-anchor="middle" id="bearing-data" text-length="12" class="current-speed-mode">...</text>
+      <text x="50%" text-anchor="middle" class="max-speed-mode">MAX SPEED</text>
+    </svg>
+
+    <svg class="coordinates row" y="80%" height="10%">
+      <rect fill="orange" class="grid-tile" />
+      <text x="50%" text-anchor="middle" text-length="69" id="latitude-data">{ latitude }</text>
+    </svg>
+    
+    <svg class="coordinates row" y="90%" height="10%">
+      <rect fill="purple" class="grid-tile" />
+      <text x="50%" text-anchor="middle" text-length="69" id="longitude-data">{ longitude }</text>
+    </svg>
+  </svg>
+</svg>
