@@ -4,8 +4,8 @@ A sailing app for [FitbisOS](https://www.fitbit.com/fitbitos) smartwatches which
 
 ⌚️ Time  
 ⛵️ Speed (in km/hr and knots)  
-🧭 Course  
-📍 Coordinates
+🔭 Course  
+📍 Coordinates  
 📊 Stats (like maximum speed)
 
 ![Screenshot](/demo.png?raw=true)
